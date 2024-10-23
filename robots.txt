@@ -1,0 +1,6 @@
+﻿User-agent: *
+Disallow: /*.php
+Disallow: /*.html
+Disallow: /*?
+Disallow: /dev/
+Disallow: /otz/

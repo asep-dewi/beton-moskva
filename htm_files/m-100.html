@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie8" lang="ru" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 9 ]> <html class="ie9" lang="ru" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"> -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <title>Бетон М100</title>
+  <link href="css/external.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+  <link href="css/internal1.css" rel="stylesheet">
+  <link href="css/plugins.css" rel="stylesheet">
+  <!-- FANCYBOX -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+
+
+
+</head>
+<body>
+<div class="wrap">
+  <header class="header">
+    <div class="container">
+      <div class="logo"><a href="/">Бетон. Москва</a></div>
+      <div class="work_time">Работаем круглосуточно</div>
+      <div class="phone">
+        <strong>+7 495 123 45 67</strong>
+        <span class="call_order">
+                        <a href="#callback-modal" class="popup-modal link link_border" data-title="Заказать звонок">Заказать звонок</a>
+                    </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- modals -->
+  <div id="callback-modal" class="mfp-hide white-popup-block">
+    <h3>Заказать звонок</h3>
+    <form action="" method="GET" data-validate="true">
+      <label for="">Номер телефона *</label>
+      <input type="text" name="textInput" class="phone" placeholder="" data-parsley-type="digits" required="">
+      <input type="checkbox" name="checkGroup[]" id="checkGroup-1" value="1" required=""><label for="checkGroup-1">Я согласен на обработку персольнах данных</label>
+      <button class="btn" type="button">Заказать</button>
+    </form>
+    <button title="Закрыть" type="button" class="mfp-close"><img src="img/icons/close-icon.png" /></button>
+  </div>
+
+  <!-- /modals -->
+
+  <nav class="menu">
+    <div class="container">
+      <ul>
+        <li><a href="/about.html">О компании</a></li>
+        <li><a href="/proizvodstvo.html">Производство</a></li>
+        <li><a href="/price.html">Цены</a></li>
+        <li><a href="/skidki.html">Скидки</a></li>
+        <li><a href="/calculator.html">Калькулятор</a></li>
+        <li><a href="/gde-kupit.html">Где купить</a></li>
+        <li><a href="/dostavka.html">Доставка</a></li>
+        <li><a href="/oplata.html">Оплата</a></li>
+        <li><a href="/garantii.html">Гарантии</a></li>
+        <li><a href="/contacts.html">Контакты</a></li>
+      </ul>
+      <span class="menu__filter-btn"><i class="icon-menu"></i><strong>Подобрать бетон</strong></span>
+      <span class="icon-menu"></span>
+    </div>
+  </nav>
+
+  <section class="filter">
+    <div class="container">
+      <div class="filter__frame">
+        <div class="filter__title">
+          <strong>Подобрать бетон:</strong>
+        </div>
+        <div class="filter__menu">
+          <ul>
+            <li class="parent"><a href="#" class="filter-ckick" data-block="filter1">По классу и марке прочности</a>
+              <div class="filter-block" id="filter1"><a href="#">1 класс</a>
+                <a href="#">2 класс</a><a href="#">3 класс</a><a href="#">4 класс</a></div>
+            </li>
+            <li class="parent"><a href="#" class="filter-ckick" data-block="filter2">По назначению</a>
+              <div class="filter-block" id="filter2"><a href="#">1 назначение</a>
+                <a href="#">2 назначение</a><a href="#">3 назначение</a><a href="#">4 назначение</a></div>
+            </li>
+            <li class="parent"><a href="#" class="filter-ckick" data-block="filter3">По содержанию вяжущего вещества</a>
+              <div class="filter-block" id="filter3"><a href="#">1 СВВ</a><a href="#">2 СВВ</a><a href="#">3 СВВ</a><a href="#">4 СВВ</a></div></li>
+            <li class="parent"><a href="#" class="filter-ckick" data-block="filter4">По объемной массе</a>
+              <div class="filter-block" id="filter4"><a href="#">1 ОМ</a><a href="#">2 ОМ</a><a href="#">3 ОМ</a><a href="#">4 ОМ</a></div></li>
+            <li class="more"><a href="#" class="filter-ckick" data-block="filter5">Еще</a>
+              <div class="filter-block fb5" id="filter5"><a href="#">1 пункт</a><a href="#">2 пункт</a><a href="#">3 пункт</a></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <style>
+    .main-block {
+      display: flex;
+    }
+
+    .main-block__item {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main-block__text {
+      font-size: 15px;
+    }
+
+    .main-block__item .block__main__info__gost {
+      border: none;
+      padding-left: 85px;
+    }
+
+    .main-block__item .list__main {
+      margin: 30px 0;
+    }
+
+    .main-block__item .block__main__desc p {
+      margin: 0 0 10px 0;
+    }
+
+    .main-block__item .block__main__info__gost img {
+      left: 0;
+    }
+
+    .block__main--beton {
+      background: url(../img/bg-beton-main.jpg) no-repeat right;
+      background-size: cover;
+      padding: 90px 0 110px 0;
+
+    }
+
+    .block__main--beton .block__main__desc .order {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (max-width: 850px) {
+      .main-block {
+        flex-direction: column;
+      }
+
+      .main-block__item {
+        width: 100%;
+      }
+
+    }
+
+    ul.list__delivery li span {
+      font-weight: 700;
+      display: block;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .delivery-terms--light {
+      background: #f8f9fd;
+      border-top: none;
+    }
+
+    .delivery-terms--light  h2.mb10 {
+      margin-bottom: 40px !important;
+    }
+
+    .block__another-beton {
+      background: #f8f9fd;
+      padding: 80px 0;
+    }
+
+    .another-beton__container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .beton__list, .beton__item {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .beton__list {
+      padding: 30px;
+      background: #ffffff;
+      border: 1px solid #e0e0e4;
+      position: relative;
+
+      min-width: 215px;
+      margin-bottom: 20px;
+    }
+    .beton__list:after {
+      content: '';
+      background: #f3f4f8;
+      position: absolute;
+      left: 9px;
+      right: 9px;
+      bottom: -11px;
+      height: 10px;
+    }
+
+    .beton__item {
+
+    }
+    .beton__link {
+      border-bottom: 1px solid rgb(137 139 141);
+      font-weight: 700;
+    }
+    .beton__link, .beton__link:hover {
+      color: #000000;
+    }
+
+    @media (max-width: 468px) {
+      /*.another-beton__container {*/
+      /*  justify-content: center;*/
+      /*}*/
+      .beton__list {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+    }
+
+
+  </style>
+
+  <section class="block block__main block__main--beton">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7" style="width: 100%">
+          <div class="block__main__desc">
+            <h1>Бетон марки М100 класса В7,5</h1>
+            <div class="main-block">
+              <div class="main-block__item">
+                <div class="main-block__text">Легкий тощий товарный бетон М100 – это универсальный высококачественный стройматериал, который полностью соответствует действующему ГОСТу. Его сравнительно низкая стоимость обусловлена меньшим расходом наполнителей по сравнению с растворами более высоких марок. Соотношение цены и качества смеси устраивает участников строительного рынка. Ее применение целесообразно и оправдано экономически. Оно дает возможность ощутимо сэкономить на вспомогательных материалоемких работах, проводимых на подготовительных этапах строительства. Поэтому марка бетона М100 класса В7.5 востребована в Москве и области.</div>
+              </div>
+              <div class="main-block__item">
+                <ul class="list list__main">
+                  <li>Не крошится и не трескается</li>
+                  <li>Экологически-чистый материал</li>
+                </ul>
+                <div class="block__main__info__gost">
+                  <img src="img/icons/gost.png" alt="">
+                  <p><strong>100% соответствие</strong><br> ГОСТ 7473-94<br> “Смеси бетонные”</p>
+                </div>
+              </div>
+            </div>
+            <div class="order">
+              <a href="#callback-modal" class="popup-modal btn btn_white btn_large m0" data-title="Заказать бетон">Заказать бетон</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="container">
+      <h2>Техническая информация</h2>
+      <div data-accordion-group>
+        <div class="accordion open" data-accordion>
+          <div class="accordion__head"><span>Описание марки бетона М100</span></div>
+          <div class="accordion__desc">
+            <img src="img/image_1.jpg" class="img_left" alt="">
+            <p>Бетон М100 – тип легких бетонов, который используется в основном для бетонной подготовки. Применяется, прежде всего, перед заливкой монолитных плит или фундамента здания, а также при строительстве дорог.</p>
+            <p>Сегодня именно бетон считается самым распространенным материалом в строительстве. И не важно, идёт ли речь о строительстве небоскреба или же о постройке фундамента для небольшого загородного домика – он будет необходим.</p>
+            <p>Но в разных случаях будет нужен разный бетон. Его принято делить на классы и марки. Все они отличаются по своим характеристикам и используются для разных целей. Для чего-то будет достаточно невысокого уровня прочности, а для другого строения прочность обязательно должна быть повышенной. М100 – одна из многочисленных марок. Во многом, марка будет зависеть от соотношения компонентов, которые используются во время изготовления. А всё потому, что от смены такого соотношения будут меняться качественные характеристики. Впрочем, стоимость разных марок также разная. М100 считается одной из самых простых. За счет этого цена на нее не будет очень высокой. При этом сфера применения данного материала также довольно ограничена. Так что не стоит полагать, что за небольшую стоимость можно получить всё и сразу.</p>
+          </div>
+        </div>
+        <div class="accordion" data-accordion>
+          <div class="accordion__head"><span>Подбор состава</span></div>
+          <div class="accordion__desc">
+            <p>Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание направлений прогрессивного развития. Повседневная практика показывает, что консультация с широким активом играет важную роль в формировании модели развития. Таким образом реализация намеченных плановых заданий в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же начало повседневной работы по формированию позиции требуют определения и уточнения соответствующий условий активизации. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+          </div>
+        </div>
+        <div class="accordion" data-accordion>
+          <div class="accordion__head"><span>Эксплуатационные свойства</span></div>
+          <div class="accordion__desc">
+            <p>Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание направлений прогрессивного развития. Повседневная практика показывает, что консультация с широким активом играет важную роль в формировании модели развития. Таким образом реализация намеченных плановых заданий в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же начало повседневной работы по формированию позиции требуют определения и уточнения соответствующий условий активизации. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+          </div>
+        </div>
+        <div class="accordion" data-accordion>
+          <div class="accordion__head"><span>Удобоукладываемость</span></div>
+          <div class="accordion__desc">
+            <p>Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание направлений прогрессивного развития. Повседневная практика показывает, что консультация с широким активом играет важную роль в формировании модели развития. Таким образом реализация намеченных плановых заданий в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же начало повседневной работы по формированию позиции требуют определения и уточнения соответствующий условий активизации. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+          </div>
+        </div>
+        <div class="accordion" data-accordion>
+          <div class="accordion__head"><span>Обозначения</span></div>
+          <div class="accordion__desc">
+            <p>Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание направлений прогрессивного развития. Повседневная практика показывает, что консультация с широким активом играет важную роль в формировании модели развития. Таким образом реализация намеченных плановых заданий в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же начало повседневной работы по формированию позиции требуют определения и уточнения соответствующий условий активизации. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+          </div>
+        </div>
+        <div class="accordion" data-accordion>
+          <div class="accordion__head"><span>Защита</span></div>
+          <div class="accordion__desc">
+            <p>Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание направлений прогрессивного развития. Повседневная практика показывает, что консультация с широким активом играет важную роль в формировании модели развития. Таким образом реализация намеченных плановых заданий в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же начало повседневной работы по формированию позиции требуют определения и уточнения соответствующий условий активизации. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+          </div>
+        </div>
+        <div class="accordion" data-accordion>
+          <div class="accordion__head"><span>Прогрев бетона зимой</span></div>
+          <div class="accordion__desc">
+            <p>Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание направлений прогрессивного развития. Повседневная практика показывает, что консультация с широким активом играет важную роль в формировании модели развития. Таким образом реализация намеченных плановых заданий в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же начало повседневной работы по формированию позиции требуют определения и уточнения соответствующий условий активизации. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block delivery-terms delivery-terms--light">
+    <div class="container">
+      <h2 class="mb10">Сферы применения бетона М100</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="list list__delivery">
+            <li><span>При установке бордюрного камня</span>Так как поверхность используется пешеходами, давление на неё оказывается небольшое.</li>
+            <li><span>Для подготовительных работ перед строительством</span>В процессе создания основания для фундамента. Служит дополнительной защитой, увеличивает показатели прочности и долговечности будущего здания.</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="list list__delivery">
+            <li><span>При строительстве дорог</span>В качестве подстилающего слоя. При строительстве дорог с невысокой интенсивностью движения. Например, в коттеджных поселках.При строительстве дорог.</li>
+            <li><span>Для выстраивания фундамента под  легкими объектами</span>К примеру, для теплиц и небольших гаражей, для основания у памятников, не слишком больших архитектурных конструкций и так далее.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block__bg block__bord_b">
+    <div class="container">
+      <h2>В чем преимущества нашего бетона М100</h2>
+      <p>Специалисты могут подтвердить, что бетон М100 обладает отличными характеристиками.
+        <br>Имеет длительный срок эксплуатации долго служит, при этом, ни в какой степени не теряет своих качеств.</p>
+      <div class="advantages grid mt50">
+        <div class="advantages__item grid__col_3 box__bord">
+          <div class="advantages__item__icon">
+            <object type="image/svg+xml" data="img/svg/advantage-2.svg"></object>
+          </div>
+          <div class="advantages__item__desc">
+            <h4>Прочность</h4>
+            <p>позволяет бетону М100 выдерживать различные нагрузки. Не разрушается
+              под воздействием негативнссых условий окружающей среды.</p>
+          </div>
+        </div>
+
+        <div class="advantages__item grid__col_3 box__bord">
+          <div class="advantages__item__icon">
+            <!--            <object type="image/svg+xml" data="img/svg/advantage-4.svg"></object>-->
+            <img src="img/icons/icon-protect.png" alt="">
+          </div>
+          <div class="advantages__item__desc">
+            <h4>Безопасность</h4>
+            <p>Бетон М-100 имеет необходимые сертификаты качества и подтверждения его безопасности. Производится из экологически чистых материалов, что делает его применимым во многих сферах.</p>
+          </div>
+        </div>
+
+        <div class="advantages__item grid__col_3 box__bord">
+          <div class="advantages__item__icon">
+            <object type="image/svg+xml" data="img/svg/advantage-3.svg"></object>
+          </div>
+          <div class="advantages__item__desc">
+            <h4>Низкая цена</h4>
+            <p>Это обсуловлено его составом
+              и свойствами. Если нет потребности в покупке сильнопрочного бетона для строительства сложных объектов, лучше приобрести бетон этой марки.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block__sale">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Стоимость бетона на 20% ниже, чем у конкурентов!</h2>
+          <p class="fz-20">Многолетний опыт и налаженный рабочий процесс позволяют снизить стоимость бетона в среднем, на 20%. Каждые 35 минут мы доставляем бетон в разные уголки Москвы.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block zakaz-beton-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 zbb-form">
+          <form action="#" class="form__calc">
+            <div class="row">
+              <div class="col-md-5 col-lg-5 col-sm-5 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 girl2_txt"><b>Елена</b><br><div class="dol">Руководитель отдела продаж</div>Вы всегда можете обратиться ко мне. В этой сфере я работаю уже 5 лет, поэтому смогу оказать профессиональную помощь.</div>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 girl2_img">
+                  <img src="img/girl_2.png" />
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <input type="text" placeholder="Ваше имя">
+                  <div class="select-block">
+                    <select name="validation-form__select" id="validation-form__select" data-search="true" data-placeholder="Марка прочности бетона" required>
+                      <option value="0" selected="" >Марка прочности бетона</option>
+                      <option value="1">Первый вариант</option>
+                      <option value="2">Второй вариант</option>
+                    </select>
+                  </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <input type="text" placeholder="Ваш телефон">
+                  <input type="text" placeholder="Объем, м3">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 change_ch">
+                  <input type="checkbox" name="check" id="ch-2" value="1" required="">
+                  <label for="ch-2">Я принимаю Условия пользования сайтом и условия Политики конфиденциальности</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 garant">
+                  <p>Гарантируем доставку <br>дешевле, чем где-либо!</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <button class="btn btn_block">Заказать</button>
+                  <span>Елена перезвонит Вам в течении 3 минут.</span>
+                </div>
+
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block__actions">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-9 col-xs-12 col-sm-9">
+              <h2>Противоморозная добавка бесплатно!</h2>
+              <p>при заказе бетона М100</p>
+              <a href="#callback-modal" class="popup-modal btn btn_white" data-title="Заказать бетон">Заказать бетон</a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-12 col-sm-3">
+              <img src="img/pmd.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-9 col-xs-12 col-sm-9">
+              <h2>Противоморозная добавка бесплатно!</h2>
+              <p>при заказе бетона, цементного раствора, керамзитобетона или пескобетона</p>
+              <a href="#callback-modal" class="popup-modal btn btn_white" data-title="Заказать бетон">Заказать бетон</a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-12 col-sm-3">
+              <img src="img/pmd.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="block block__calc">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 calc-f-block">
+          <form action="#" class="form__calc">
+            <div class="pad-lrt-40">
+              <h2>Калькулятор бетона</h2>
+              <p class="fz-22">Рассчитайте стоимость бетона М100 с доставкой</p>
+            </div>
+            <div class="box__info">
+              <p class="f8f9 pad-40">Так как большинство бетонных конструкций имеют сложную геометрическую форму, расчет их объема можно облегчить, применяя разбивку всей конструкции на более простые детали. Армирующие элементы обычно составляют 5 — 10% общего объема заливки, эту погрешность можно отнести к монтажным потерям.</p>
+            </div>
+            <div class="pad-lrb-40">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="select-block">
+                    <select name="select">
+                      <option value="1">Выберите бетон</option>
+                      <option value="2">Первый пункт</option>
+                      <option value="3">Второй пункт</option>
+                      <option value="4">Третий пункт</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="select-block">
+                    <select name="select">
+                      <option value="1">Укажите объем, м3</option>
+                      <option value="2">Первый пункт</option>
+                      <option value="3">Второй пункт</option>
+                      <option value="4">Третий пункт</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="select-block">
+                    <select name="select">
+                      <option value="1">Выберите марку прочности</option>
+                      <option value="2">Первый пункт</option>
+                      <option value="3">Второй пункт</option>
+                      <option value="4">Третий пункт</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" value="ул. Зои и Александра Космодем..">
+                </div>
+                <div class="col-md-12">
+                  <input type="checkbox" name="check"  id="ch-1" value="1" required>
+                  <label for="ch-1">Я принимаю Условия пользования сайтом и условия Политики конфиденциальности</label>
+                </div>
+                <div class="col-md-6">
+                  <div class="box__delivery">Гарантируем доставку <br>дешевле, чем где-либо!</div>
+                </div>
+                <div class="col-md-6">
+                  <button class="btn">Рассчитать</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block woman-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5"><div class="woman-1-bg"></div></div>
+        <div class="col-md-7 calc-f-block">
+          <form action="#" class="form__calc">
+            <div class="pad-lrt-40">
+              <h2>Трудно рассчитать?</h2>
+              <p class="fz-22">Я вам помогу и сделаю расчет всего за 1 минуту</p>
+            </div>
+            <div class="box__info">
+              <p class="f8f9 pad-40">Оставьте номер своего телефона. Я перезвоню Вам для уточнения деталей, а также расскажу о специальных условиях при заказе бетона от 20м3.</p>
+            </div>
+            <div class="pad-lrb-40">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" placeholder="Ваш телефон">
+                </div>
+                <div class="col-md-6">
+                  <button class="btn btn_block">Отправить</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block__otzs">
+    <div class="container">
+      <h2>Отзывы о бетоне М100</h2>
+    </div>
+    <div class="carousel-inner invert-car-btn">
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-5 col-xs-12 col-sm-5">
+              <img src="img/otz1.jpg" />
+            </div>
+            <div class="col-lg-7 col-md-7 col-xs-12 col-sm-7">
+              <div class="otz-title">Леонид Макаров</div>
+              <div class="otz-desc">Генеральный директор "Смартс Медиа"</div>
+              <p>"Благодарим коллектив ООО "Бетон.Москва" за участие в реализации проекта по реконструкции торгового центра "Кристалл". Было очень приятно ощущать со стороны работников Вашей компании оперативность и технически грамотное отношение к работе в течение всего периода нашего сотрудничества. Хочется особенно отметить вклад менеджера Козобина Анатолия Владимировича. Его профессионализм и глубокое знание дела позволили сократить сроки проведения работ и значительно уменьшить затраты Мы надеемся на дальнейшее успешное развитие наших деловых отношений. Желаем Вам и Вашей компании новых достижений и финансового благополучия!".</p>
+              <a href="#">Благодарственное письмо</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-5 col-xs-12 col-sm-5">
+              <img src="img/otz1.jpg" />
+            </div>
+            <div class="col-lg-7 col-md-7 col-xs-12 col-sm-7">
+              <div class="otz-title">Леонид Макаров</div>
+              <div class="otz-desc">Генеральный директор "Смартс Медиа"</div>
+              <p>"Благодарим коллектив ООО "Бетон.Москва" за участие в реализации проекта по реконструкции торгового центра "Кристалл". Было очень приятно ощущать со стороны работников Вашей компании оперативность и технически грамотное отношение к работе в течение всего периода нашего сотрудничества. Хочется особенно отметить вклад менеджера Козобина Анатолия Владимировича. Его профессионализм и глубокое знание дела позволили сократить сроки проведения работ и значительно уменьшить затраты Мы надеемся на дальнейшее успешное развитие наших деловых отношений. Желаем Вам и Вашей компании новых достижений и финансового благополучия!".</p>
+              <a href="#">Благодарственное письмо</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="block block__changeotz">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+          <h2>Уже работали с нами?</h2>
+          <a href="#" class="btn">Оставьте отзыв</a>
+          <p>Это займет не более 5 минут.</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+          <p class="fz-20">Ваш отзыв поможет другим людям сделать правильный выбор при поиске надежного производителя бетона.
+            Благодарим за внимание!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block__general-price">
+    <div class="container">
+      <h2>Цены на бетон с М100 с доставкой</h2>
+      <ul class="tabs">
+        <li class="tabs__item">
+          <span class="tabs__link is-active">Цена за М&sup3;</span>
+          <div class="tabs__cnt">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+              <p class="info">В зависимости от используемых пропорций добавок, качество и прочность бетона будут различными. Качество нашей продукции соответствтует ГОСТ 7473-94 "Смеси бетонные".</p>
+              <div class="hard-easy-beton">
+                <a href="#" class="active" id="heavy-beton"><span>Тяжелый бетон</span> (гравий/гранит)</a>
+                <a href="#" class="" id="light-beton"><span>Легкий бетон</span> (гравий/гранит)</a>
+              </div>
+              <div class="beton-views">
+                <div class="beton-view col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    М100 В7,5&nbsp;&nbsp;&nbsp;П2 F50 W2<br>
+                    М100 В7,5&nbsp;&nbsp;&nbsp;П3 F50 W2<br>
+                    М100 В7,5&nbsp;&nbsp;&nbsp;П4 F50 W2<br>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    Цена:
+                    <div class="price">2 850 р./м³</div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 buy">
+                    <a href="#">Купить в 1 клик</a>
+                  </div>
+                </div>
+                <div class="beton-view col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    М150 В10&nbsp;&nbsp;&nbsp;П3 F50 W2<br>
+                    М150 В10&nbsp;&nbsp;&nbsp;П4 F50 W2<br>
+                    М150 В12,5&nbsp;&nbsp;&nbsp;П4 F100<br>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    Цена:
+                    <div class="price">2 950 р./м³</div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 buy">
+                    <a href="#">Купить в 1 клик</a>
+                  </div>
+                </div>
+                <div class="beton-view col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    М200 В15&nbsp;&nbsp;&nbsp;П3 F100 W4<br>
+                    М200 В15&nbsp;&nbsp;&nbsp;П4 F100 W4<br>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    Цена:
+                    <div class="price">3 100 р./м³</div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 buy">
+                    <a href="#">Купить в 1 клик</a>
+                  </div>
+                </div>
+                <div class="beton-view col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    М250 В20&nbsp;&nbsp;&nbsp;П3 F200 W6<br>
+                    М250 В20&nbsp;&nbsp;&nbsp;П4 F200 W6<br>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    Цена:
+                    <div class="price">3 250 р./м³</div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 buy">
+                    <a href="#">Купить в 1 клик</a>
+                  </div>
+                </div>
+                <div class="beton-view col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    М300 В22,5&nbsp;&nbsp;&nbsp;П3 F200 W6<br>
+                    М300 В22,5&nbsp;&nbsp;&nbsp;П3 F200 W6<br>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    Цена:
+                    <div class="price">3 400 р./м³</div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 buy">
+                    <a href="#">Купить в 1 клик</a>
+                  </div>
+                </div>
+                <div class="beton-view col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    М350 В25&nbsp;&nbsp;&nbsp;П3 F200 W8<br>
+                    М350 В25&nbsp;&nbsp;&nbsp;П4 F200 W8<br>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    Цена:
+                    <div class="price">3 550 р./м³</div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 buy">
+                    <a href="#">Купить в 1 клик</a>
+                  </div>
+                </div>
+              </div>
+              <div class="beton-views2">
+                <div class="beton-view col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    М100 В7,5&nbsp;&nbsp;&nbsp;П2 F50 W2<br>
+                    М100 В7,5&nbsp;&nbsp;&nbsp;П3 F50 W2<br>
+                    М100 В7,5&nbsp;&nbsp;&nbsp;П4 F50 W2<br>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    Цена:
+                    <div class="price">2 850 р./м³</div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 buy">
+                    <a href="#">Купить в 1 клик</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="accordion" data-accordion>
+                  <div class="accordion__head"><span>Тощий бетон (дорожный)</span></div>
+                  <div class="accordion__desc">
+                    <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+                  </div>
+                </div>
+                <div class="accordion" data-accordion>
+                  <div class="accordion__head"><span>Цементный раствор</span></div>
+                  <div class="accordion__desc">
+                    <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 tab-right-side">
+              <p>Мы осуществляем производство и доставку двух видов качественной бетонной смеси: из гранита и гравия.
+                Представлены цены на бетон из расчета за 1 м3.</p>
+              <p>
+                <b>М</b> - марка,<br>
+                <b>П</b> - подвижность бетона,<br>
+                <b>F</b> - морозоустойчивость,<br>
+                <b>W</b> - коэффициент водонепроницаемости.<br>
+              </p>
+              <a href="#" class="btn btn_block">Заказать бетон</a>
+              <div class="today_del">
+                Сегодня, 9 августа 2017 г.,<br>
+                бетон заказали уже 88 раз
+                <span></span>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 tab-right-side-2">
+              Возникли вопросы? Позвоните нам:<br>
+              <a href="tel://+74951234567">+7 495 123 45 67</a>
+            </div>
+
+          </div>
+        </li>
+        <li class="tabs__item">
+          <span class="tabs__link">Цена за миксер</span>
+          <div class="tabs__cnt">
+            <p class="info">В зависимости от используемых пропорций добавок, качество и прочность бетона будут различными. Качество нашей продукции соответствтует ГОСТ 7473-94 "Смеси бетонные".</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block block__skid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Хотите снизить цену на бетон?</h2>
+          <p class="fz-20">Оставьте свой e-mail и получите купон на 15% скидку.</p>
+          <div class="">
+            <div class="row">
+              <div class="col-md-5">
+                <input type="text" placeholder="Ваш телефон">
+              </div>
+              <div class="col-md-5">
+                <button class="btn btn_block">Отправить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANOTHER BETON-->
+  <section class="block block__another-beton another-beton">
+    <div class="container">
+      <h2>Посмотреть другой бетон</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="another-beton__container">
+
+            <ul class="beton__list">
+              <li class="beton__item"><a class="beton__link" href="#">М150 / В12,5</a></li>
+              <li class="beton__item"><a class="beton__link" href="#">М200 / В15</a></li>
+              <li class="beton__item"><a class="beton__link" href="#">М250 / В20</a></li>
+              <li class="beton__item"><a class="beton__link" href="#">М300 / В22,5</a></li>
+            </ul>
+
+            <ul class="beton__list">
+              <li class="beton__item"><a class="beton__link" href="#">М350 / В25</a></li>
+              <li class="beton__item"><a class="beton__link" href="#">М400 / В30</a></li>
+              <li class="beton__item"><a class="beton__link" href="#">М450 / В35</a></li>
+              <li class="beton__item"><a class="beton__link" href="#">М500 / B40</a></li>
+            </ul>
+
+            <ul class="beton__list">
+              <li class="beton__item"><a class="beton__link" href="#">Для фундамента</a></li>
+              <li class="beton__item"><a class="beton__link" href="#">Для полов</a></li>
+              <li class="beton__item"><a class="beton__link" href="#">Для бассейна</a></li>
+              <li class="beton__item"><a class="beton__link" href="#">Для забора</a></li>
+            </ul>
+
+            <ul class="beton__list">
+              <li class="beton__item"><a class="beton__link" href="#">Дорожный</a></li>
+              <li class="beton__item"><a class="beton__link" href="#">Ячеистый</a></li>
+              <li class="beton__item"><a class="beton__link" href="#">Тощий</a></li>
+              <li class="beton__item"><a class="beton__link" href="#">Пенобетон</a></li>
+            </ul>
+
+            <ul class="beton__list">
+              <li class="beton__item"><a class="beton__link" href="#">Газобетон</a></li>
+              <li class="beton__item"><a class="beton__link" href="#">Железобетон</a></li>
+              <li class="beton__item"><a class="beton__link" href="#">Бетонные смеси</a></li>
+              <li class="beton__item"><a class="beton__link" href="#">Товарный бетон</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ANOTHER BETON EBD-->
+
+  <section class="block">
+    <div class="container">
+      <h2 class="mb10">Частые вопросы</h2>
+      <p class="fz-20">Мы всегда готовы ответить на Ваши вопросы и помочь. Здесь мы собрали наиболее популярные вопросы наших клиентов. Возможно, Вы найдете ответ на то, что Вас интересует.</p>
+
+      <div data-accordion-group>
+        <div class="accordion accordion__faq open" data-accordion>
+          <div class="accordion__head"><span>Что такое "прочность бетона"?</span></div>
+          <div class="accordion__desc">
+            <p>Прочность является самым важным свойством бетона. Как и природный камень, бетон лучше сопротивляется сжатию, чем растяжению, поэтому за критерий прочности принят предел прочности бетона при сжатии. Прочность бетона нарастает в результате физико-химических процессов взаимодействия цемента с водой, которые нормально проходят в теплых и влажных условиях. Взаимодействие цемента с водой прекращается, если бетон высыхает или замерзает. Раннее высыхание или замерзание бетона непоправимо ухудшает его строение и свойства.</p>
+          </div>
+        </div>
+        <div class="accordion accordion__faq" data-accordion>
+          <div class="accordion__head"><span>Что такое "морозостойкость"?</span></div>
+          <div class="accordion__desc">
+            <p>Прочность является самым важным свойством бетона. Как и природный камень, бетон лучше сопротивляется сжатию, чем растяжению, поэтому за критерий прочности принят предел прочности бетона при сжатии. Прочность бетона нарастает в результате физико-химических процессов взаимодействия цемента с водой, которые нормально проходят в теплых и влажных условиях. Взаимодействие цемента с водой прекращается, если бетон высыхает или замерзает. Раннее высыхание или замерзание бетона непоправимо ухудшает его строение и свойства.</p>
+          </div>
+        </div>
+        <div class="accordion accordion__faq" data-accordion>
+          <div class="accordion__head"><span>Как долго может находиться бетонная смесь в автобетоносмесителе до начала ее укладки?</span></div>
+          <div class="accordion__desc">
+            <p>Прочность является самым важным свойством бетона. Как и природный камень, бетон лучше сопротивляется сжатию, чем растяжению, поэтому за критерий прочности принят предел прочности бетона при сжатии. Прочность бетона нарастает в результате физико-химических процессов взаимодействия цемента с водой, которые нормально проходят в теплых и влажных условиях. Взаимодействие цемента с водой прекращается, если бетон высыхает или замерзает. Раннее высыхание или замерзание бетона непоправимо ухудшает его строение и свойства.</p>
+          </div>
+        </div>
+        <div class="accordion accordion__faq" data-accordion>
+          <div class="accordion__head"><span>Что такое класс и марка бетона?</span></div>
+          <div class="accordion__desc">
+            <p>Прочность является самым важным свойством бетона. Как и природный камень, бетон лучше сопротивляется сжатию, чем растяжению, поэтому за критерий прочности принят предел прочности бетона при сжатии. Прочность бетона нарастает в результате физико-химических процессов взаимодействия цемента с водой, которые нормально проходят в теплых и влажных условиях. Взаимодействие цемента с водой прекращается, если бетон высыхает или замерзает. Раннее высыхание или замерзание бетона непоправимо ухудшает его строение и свойства.</p>
+          </div>
+        </div>
+        <div class="accordion accordion__faq" data-accordion>
+          <div class="accordion__head"><span>Что такое осадка конуса и как ее измерить?</span></div>
+          <div class="accordion__desc">
+            <p>Прочность является самым важным свойством бетона. Как и природный камень, бетон лучше сопротивляется сжатию, чем растяжению, поэтому за критерий прочности принят предел прочности бетона при сжатии. Прочность бетона нарастает в результате физико-химических процессов взаимодействия цемента с водой, которые нормально проходят в теплых и влажных условиях. Взаимодействие цемента с водой прекращается, если бетон высыхает или замерзает. Раннее высыхание или замерзание бетона непоправимо ухудшает его строение и свойства.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block__questions">
+    <div class="container">
+      <h2>Все равно остались вопросы? Напишите нам.</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <form action="#">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <input type="text" placeholder="Ваше имя" class="mb20">
+                <input type="text" placeholder="Ваш телефон" class="mb20">
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <textarea placeholder="Напишите ваш вопрос" class="mb20"></textarea>
+                <button class="btn btn_block">Отправить вопрос</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <p class="mb35">Мы можем ответить на Ваш вопрос<br> в любом из этих мессенджеров:</p>
+          <ul class="list list__write">
+            <li><a href="#"><i class="icon icon_w"></i>Whatsapp</a></li>
+            <li><a href="#"><i class="icon icon_v"></i>Viber</a></li>
+            <li><a href="#"><i class="icon icon_m"></i>Messenger</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block__map">
+    <div id="map"></div>
+    <div class="container">
+      <div class="block__map__frame">
+        <p><strong>Наш адрес:</strong> 125424, г. Москва, ул. Летная, 98</p>
+        <p><strong>Номер телефона:</strong> +7 (495) 123 4567</p>
+        <p><strong class="fz-18">Работаем круглосуточно!</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript">
+    ymaps.ready(init);
+    var myMap,
+      myPlacemark;
+
+    function init(){
+      myMap = new ymaps.Map("map", {
+        center: [55.825310, 37.418694],
+        zoom: 12,
+        controls: []
+      });
+
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        hintContent: '',
+        balloonContent: ''
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/icons/map.png',
+        // Размеры метки.
+        iconImageSize: [40, 43],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      });
+
+      myMap.geoObjects.add(myPlacemark);
+    }
+  </script>
+
+  <nav class="menu menu__down">
+    <div class="container">
+      <ul>
+        <li><a href="/about/">О компании</a></li>
+        <li><a href="/proizvodstvo/">Производство</a></li>
+        <li><a href="/price/">Цены</a></li>
+        <li><a href="/skidki/">Скидки</a></li>
+        <li><a href="/calculator/">Калькулятор</a></li>
+        <li><a href="/gde-kupit/">Где купить</a></li>
+        <li><a href="/dostavka/">Доставка</a></li>
+        <li><a href="/oplata/">Оплата</a></li>
+        <li><a href="/garantii/">Гарантии</a></li>
+        <li><a href="/contacts/">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <footer class="footer">
+    <div class="container">
+      <a href="#callback-modal" class="popup-modal btn btn_order" data-title="Заказать бетон">заказать бетон</a>
+      <div class="footer__block">
+        <div class="phone">
+          <strong>+7 495 123 45 67</strong>
+          <span class="call_order">
+						<a href="#callback-modal" class="popup-modal link link_border" data-title="Заказать звонок">Заказать звонок</a>
+		                </span>
+        </div>
+      </div>
+      <div class="footer__block">
+        <div class="copyr">
+          <p>&copy; 2018 Бетон.Москва - производство и доставка бетона</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+
+<script src="js/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+<script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+<!--[if lte IE 8]>
+<script src="js/html5shiv/html5shiv.min.js" type="text/javascript"></script>
+<![endif]-->
+
+<script src="js/slick.min.js" type="text/javascript"></script>
+<script src="js/external.js" type="text/javascript"></script>
+<script src="js/internal.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+</body>
+</html>

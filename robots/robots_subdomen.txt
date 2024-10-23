@@ -1,0 +1,6 @@
+#Субдомен
+User-Agent: *
+Disallow: /
+Disallow: /*otz
+
+Sitemap: https://xn--90aiydt.xn--80adxhks/sitemap.xml

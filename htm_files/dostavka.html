@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie8" lang="ru" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 9 ]> <html class="ie9" lang="ru" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"> -->
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <title>Доставка</title>
+    <link href="css/external.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <link href="css/internal1.css" rel="stylesheet">
+    <link href="css/plugins.css" rel="stylesheet">
+    <!-- FANCYBOX -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="container">
+                <div class="logo"><a href="/">Бетон. Москва</a></div>
+                <div class="work_time">Работаем круглосуточно</div>
+                <div class="phone">
+                    <strong>+7 495 123 45 67</strong>
+                    <span class="call_order">
+                        <a href="#callback-modal" class="popup-modal link link_border" data-title="Заказать звонок">Заказать звонок</a>
+                    </span>
+                </div>
+            </div>
+        </header>
+
+<!-- modals -->
+      <div id="callback-modal" class="mfp-hide white-popup-block">
+        <h3>Заказать звонок</h3>
+		<form action="" method="GET" data-validate="true">
+		<label for="">Номер телефона *</label>
+        <input type="text" name="textInput" class="phone" placeholder="" data-parsley-type="digits" required="">
+		<input type="checkbox" name="checkGroup[]" id="checkGroup-1" value="1" required=""><label for="checkGroup-1">Я согласен на обработку персольнах данных</label>
+		<button class="btn" type="button">Заказать</button>
+		</form>
+		<button title="Закрыть" type="button" class="mfp-close"><img src="img/icons/close-icon.png" /></button>
+      </div>
+
+<!-- /modals -->
+
+        <nav class="menu">
+            <div class="container">
+              <ul>
+                <li><a href="/about.html">О компании</a></li>
+                <li><a href="/proizvodstvo.html">Производство</a></li>
+                <li><a href="/price.html">Цены</a></li>
+                <li><a href="/skidki.html">Скидки</a></li>
+                <li><a href="/calculator.html">Калькулятор</a></li>
+                <li><a href="/gde-kupit.html">Где купить</a></li>
+                <li><a href="/dostavka.html">Доставка</a></li>
+                <li><a href="/oplata.html">Оплата</a></li>
+                <li><a href="/garantii.html">Гарантии</a></li>
+                <li><a href="/contacts.html">Контакты</a></li>
+              </ul>
+                <span class="menu__filter-btn"><i class="icon-menu"></i><strong>Подобрать бетон</strong></span>
+                <span class="icon-menu"></span>
+            </div>
+        </nav>
+
+
+        <section class="filter">
+            <div class="container">
+                <div class="filter__frame">
+                    <div class="filter__title">
+                        <strong>Подобрать бетон:</strong>
+                    </div>
+                    <div class="filter__menu">
+                        <ul>
+                            <li class="parent"><a href="#" class="filter-ckick" data-block="filter1">По классу и марке прочности</a>
+							<div class="filter-block" id="filter1"><a href="#">1 класс</a>
+							<a href="#">2 класс</a><a href="#">3 класс</a><a href="#">4 класс</a></div>
+							</li>
+                            <li class="parent"><a href="#" class="filter-ckick" data-block="filter2">По назначению</a>
+							<div class="filter-block" id="filter2"><a href="#">1 назначение</a>
+							<a href="#">2 назначение</a><a href="#">3 назначение</a><a href="#">4 назначение</a></div>
+							</li>
+                            <li class="parent"><a href="#" class="filter-ckick" data-block="filter3">По содержанию вяжущего вещества</a>
+							<div class="filter-block" id="filter3"><a href="#">1 СВВ</a><a href="#">2 СВВ</a><a href="#">3 СВВ</a><a href="#">4 СВВ</a></div></li>
+                            <li class="parent"><a href="#" class="filter-ckick" data-block="filter4">По объемной массе</a>
+							<div class="filter-block" id="filter4"><a href="#">1 ОМ</a><a href="#">2 ОМ</a><a href="#">3 ОМ</a><a href="#">4 ОМ</a></div></li>
+                            <li class="more"><a href="#" class="filter-ckick" data-block="filter5">Еще</a>
+							<div class="filter-block fb5" id="filter5"><a href="#">1 пункт</a><a href="#">2 пункт</a><a href="#">3 пункт</a></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="title deli-block" style="background-image: url(img/title_delivery.jpg);">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li>Доставка бетона</li>
+                    </ul>
+                </div>
+                <h1>Доставка бетона</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="fz-20">Ознакомьтесь со способами доставки на разные виды бетона для фундамента, монолитного перекрытия, пола, бассейна, забора и дорожных работ.</p>
+					<div class="col-md-6 p0"><a href="#callback-modal" class="popup-modal link btn" data-title="Заказать звонок">Заказать обратный звонок</a></div>
+					<div class="col-md-6 srt-block"><div><img src="img/srt.png"></div><div class="srt-2"><b>100% соответствие</b><br>ГОСТ 7473-94<br>“Смеси бетонные”</div></div>
+                    </div>
+                    <div class="col-md-6">
+					<ul class="ul-yellow">
+					<li><span>Стоимость услуги рассчитывается в индивидуальном порядке</span></li>
+					<li><span>Для постоянных покупателей и оптовых заказчиков предусмотренная гибкая система скидок</span></li>
+					</ul>
+					</div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="block block__general-price">  
+			<div class="container">
+            <ul class="tabs mnonm">
+                <li class="tabs__item">
+                    <span class="tabs__link is-active">Москва</span>
+                    <div class="tabs__cnt">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <input type="text" name="textInput" id="" placeholder="Напишите что-нибудь" data-parsley-type="digits" required="">
+
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 price-rass">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 pras-1">
+					0 - 5 км.
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pras-2">
+					300 руб.
+					</div>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 price-rass">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 pras-1">
+					5 - 10 км. (включительно)
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pras-2">
+					350 руб.
+					</div>
+					</div>					
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 price-rass">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 pras-1">
+					10 - 15 км. (включительно)
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pras-2">
+					400 руб.
+					</div>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 price-rass">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 pras-1">
+					15 - 20 км. (включительно)
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pras-2">
+					450 руб.
+					</div>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 price-rass">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 pras-1">
+					20 - 25 км. (включительно)
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pras-2">
+					500 руб.
+					</div>
+					</div>	
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 price-rass">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 pras-1">
+					25 - 30 км. (включительно)
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pras-2">
+					550 руб.
+					</div>
+					</div>					
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 price-rass">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 pras-1">
+					30 - 40 км. (включительно)
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pras-2">
+					600 руб.
+					</div>
+					</div>					
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 price-rass">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 pras-1">
+					40 - 50 км. (включительно)
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pras-2">
+					650 руб.
+					</div>
+					</div>					
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 price-rass">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 pras-1">
+					Свыше 50 км. (включительно)
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pras-2">
+					договорная
+					</div>
+					</div>	
+					
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 tab-right-side">
+        <section class="block block__map">
+            <div id="map"></div>
+            <div class="container">
+                <div class="block__map__frame bmf2">
+                    <p>Москва, Ленинградский проспект, 80</p>
+                    <p>Расстояние: 10 км,   Стоимость: 350 руб.</p>
+                </div>
+            </div>
+        </section>					
+					</div>
+					
+                    </div>
+                </li>
+                <li class="tabs__item">
+                    <span class="tabs__link">Подмосковье</span>
+                    <div class="tabs__cnt">
+                        <p>В зависимости от используемых пропорций добавок, качество и прочность бетона будут различными. Качество нашей продукции соответствтует ГОСТ 7473-94 "Смеси бетонные".</p>
+                    </div>
+                </li>
+            </ul>
+		</div>
+		</section>		
+		
+        <section class="block woman-block">
+            <div class="container">
+                <div class="row">
+				<div class="col-md-5"><div class="woman-1-bg"></div></div>
+                    <div class="col-md-7 calc-f-block">
+                        <form action="#" class="form__calc">
+						<div class="pad-lrt-40">
+                            <h2>Трудно рассчитать?</h2>
+                            <p class="fz-22">Я вам помогу и сделаю расчет всего за 1 минуту</p>
+                        </div>    
+							<div class="box__info">
+                                <p class="f8f9 pad-40">Оставьте номер своего телефона. Я перезвоню Вам для уточнения деталей, а также расскажу о специальных условиях при заказе бетона от 20м3.</p>
+                            </div>
+							<div class="pad-lrb-40">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Ваш телефон">
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn btn_block">Отправить</button>
+                                </div>
+                            </div>
+							</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="block block__car">
+            <div class="container">
+                <h2 class="mb10">Наш автопарк</h2>
+                <p class="fz-20 m0">Мы не только производим бетон, но и доставляем его в специальных автобетоносмесителях к объектув любое удобное для Вас время.</p>
+
+                <div class="block__car__desc">
+                    <p>Надежная транспортировка позволит:</p>
+                    <ul class="list list__default">
+                        <li>приготовить раствор во время передвижения бетоносмесителя;</li>
+                        <li>смесь сохранит однородную консистенцию.</li>
+                    </ul>
+                    <p>Для перевозки на дальние расстояния используются пластификаторы и замедлители, не влияющие на качество бетона.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 car">
+                        <div class="car__image">
+                            <img src="img/avto-1.jpg" alt="">
+                        </div>
+                        <div class="car__desc">
+                            <div class="car__desc__left">
+                                <h5>АБС-7DA на МАЗ-6312В3</h5>
+                                <p>
+                                    <span>Объем: до 7 кубов</span>
+                                    <span>Длина: 5,5 м</span>
+                                </p>
+                            </div>
+                            <div class="car__desc__right">
+                                <p><a href="#">Рассчитать стоимость доставки</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 car">
+                        <div class="car__image">
+                            <img src="img/avto-2.jpg" alt="">
+                        </div>
+                        <div class="car__desc">
+                            <div class="car__desc__left">
+                                <h5>АБС-7DA на МАЗ-6312В3</h5>
+                                <p>
+                                    <span>Объем: до 7 кубов</span>
+                                    <span>Длина: 5,5 м</span>
+                                </p>
+                            </div>
+                            <div class="car__desc__right">
+                                <p><a href="#">Рассчитать стоимость доставки</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 car">
+                        <div class="car__image">
+                            <img src="img/avto-3.jpg" alt="">
+                        </div>
+                        <div class="car__desc">
+                            <div class="car__desc__left">
+                                <h5>АБС-7DA на МАЗ-6312В3</h5>
+                                <p>
+                                    <span>Объем: до 7 кубов</span>
+                                    <span>Длина: 5,5 м</span>
+                                </p>
+                            </div>
+                            <div class="car__desc__right">
+                                <p><a href="#">Рассчитать стоимость доставки</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 car">
+                        <div class="car__image">
+                            <img src="img/avto-4.jpg" alt="">
+                        </div>
+                        <div class="car__desc">
+                            <div class="car__desc__left">
+                                <h5>АБС-7DA на МАЗ-6312В3</h5>
+                                <p>
+                                    <span>Объем: до 7 кубов</span>
+                                    <span>Длина: 5,5 м</span>
+                                </p>
+                            </div>
+                            <div class="car__desc__right">
+                                <p><a href="#">Рассчитать стоимость доставки</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="block delivery-terms">
+            <div class="container">
+                <h2 class="mb10">Условия доставки</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list list__delivery">
+                            <li>Марка бетона, которая зависит от количественной  доли цемента в составе смеси</li>
+                            <li>Прочность смеси на сжатие</li>
+                            <li>Устойчивость к влаге и морозостойкость</li>
+                            <li>Прочность песка и щебня с гравием, а также наличие или отсутствие примесей</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list list__delivery">
+                            <li>Марка бетона, которая зависит от количественной  доли цемента в составе смеси</li>
+                            <li>Прочность смеси на сжатие</li>
+                            <li>Устойчивость к влаге и морозостойкость</li>
+                            <li>Прочность песка и щебня с гравием, а также наличие или отсутствие примесей</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <a href="#" class="btn mt15">посмотреть цены</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="block zakaz-beton-block zakaz-beton-block-dostavka">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="mb10">Закажите тощий бетон с доставкой прямо сейчас!</h2>
+                    </div>
+                    <div class="col-md-12 zbb-form">
+                        <form action="#" class="form__calc">
+                            <div class="row">
+                                <div class="col-md-5 col-lg-5 col-sm-5 col-xs-12">
+								<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 girl2_txt"><b>Елена</b><br><div class="dol">Руководитель отдела продаж</div>Вы всегда можете обратиться ко мне. В этой сфере я работаю уже 5 лет, поэтому смогу оказать профессиональную помощь.</div>
+								<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 girl2_img">
+								<img src="img/girl_2.png" />
+								</div>
+                                </div>
+                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<input type="text" placeholder="Ваше имя">
+                                <div class="select-block">
+                                    <select name="validation-form__select" id="validation-form__select" data-search="true" data-placeholder="Марка прочности бетона" required>
+                                        <option value="0" selected="" >Марка прочности бетона</option>
+                                        <option value="1">Первый вариант</option>
+                                        <option value="2">Второй вариант</option>
+                                    </select>
+                                </div>
+
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<input type="text" placeholder="Ваш телефон">
+								<input type="text" placeholder="Объем, м3">
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 change_ch">
+								<input type="checkbox" name="check" id="ch-1" value="1" required="">
+                                <label for="ch-1">Я принимаю Условия пользования сайтом и условия Политики конфиденциальности</label>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 garant">
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6"><img src="img/car-beton.png"></div>
+								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6">Гарантируем доставку дешевле, чем где-либо!</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<!-- <button class="btn btn_block">Заказать</button> -->
+                                <a href="#callback-modal" class="popup-modal btn btn_order" data-title="Заказать">заказать</a>
+								<span>Елена перезвонит Вам в течении 3 минут.</span>
+								</div>
+								
+                                
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>	
+
+		<nav class="menu menu__down">
+		    <div class="container">
+		        <ul>
+                    <li><a href="/about/">О компании</a></li>
+                    <li><a href="/proizvodstvo/">Производство</a></li>
+                    <li><a href="/price/">Цены</a></li>
+                    <li><a href="/skidki/">Скидки</a></li>
+                    <li><a href="/calculator/">Калькулятор</a></li>
+                    <li><a href="/gde-kupit/">Где купить</a></li>
+                    <li><a href="/dostavka/">Доставка</a></li>
+                    <li><a href="/oplata/">Оплата</a></li>
+                    <li><a href="/garantii/">Гарантии</a></li>
+                    <li><a href="/contacts/">Контакты</a></li>
+		        </ul>
+		    </div>
+		</nav>
+
+		<footer class="footer">
+		    <div class="container">
+				<a href="#callback-modal" class="popup-modal btn btn_order" data-title="Заказать бетон">заказать бетон</a>
+		        <div class="footer__block">
+		            <div class="phone">
+		                <strong>+7 495 123 45 67</strong>
+		                <span class="call_order">
+						<a href="#callback-modal" class="popup-modal link link_border" data-title="Заказать звонок">Заказать звонок</a>
+		                </span>
+		            </div>
+		        </div>
+		        <div class="footer__block">
+		            <div class="copyr">
+		                <p>&copy; 2018 Бетон.Москва - производство и доставка бетона</p>
+		            </div>
+		        </div>
+		    </div>
+		</footer>
+    </div>
+
+
+
+    <script src="js/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <!--[if lte IE 8]>
+        <script src="js/html5shiv/html5shiv.min.js" type="text/javascript"></script>
+    <![endif]-->
+
+	<script src="js/slick.min.js" type="text/javascript"></script>
+    <script src="js/external.js" type="text/javascript"></script>
+    <script src="js/internal.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+</body>
+</html>

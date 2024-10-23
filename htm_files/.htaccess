@@ -1,0 +1,4 @@
+AuthName "Enter login"
+AuthType Basic
+AuthUserFile 	/var/www/u203697/data/www/xn--90aiydt.xn--80adxhks/.htpasswd
+require valid-user

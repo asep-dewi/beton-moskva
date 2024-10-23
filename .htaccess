@@ -1,0 +1,190 @@
+AddDefaultCharset UTF-8
+AuthType Basic
+AuthName "Thats protected Area!"
+AuthUserFile /var/www/u203697/data/www/xn--90aiydt.xn--80adxhks/.htpasswd
+#Require valid-user
+<Files .htpasswd>
+   deny from all  #запрет доступа из браузера к .htpasswd
+</Files>
+
+
+RewriteEngine on
+
+RewriteBase /
+
+
+
+#RewriteCond %{HTTP_HOST} ^evacuator\.net$ [NC]
+#RewriteRule ^(.*)$ https://xn--80aae7avmmcaef4i.xn--p1ai/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} ^www.evacuator\.net$ [NC]
+#RewriteRule ^(.*)$ https://xn--80aae7avmmcaef4i.xn--p1ai/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} ^www\.evacuator\.net$ [NC]
+#RewriteRule ^(.*)$ https://xn--80aae7avmmcaef4i.xn--p1ai/$1 [R=301,L]
+#
+#RewriteCond %{HTTP_HOST} ^(.+).evacuator\.net$ [NC]
+#RewriteRule ^(.*)$ https://%1.xn--80aae7avmmcaef4i.xn--p1ai/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} ^(.+).evacuator\.net$ [NC]
+#RewriteRule ^(.*)$ https://%1.xn--80aae7avmmcaef4i.xn--p1ai/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} ^www\.(.+).evacuator\.net$ [NC]
+#RewriteRule ^(.*)$ https://%1.xn--80aae7avmmcaef4i.xn--p1ai/$1 [R=301,L]
+
+
+RewriteCond %{HTTP_HOST} ^www.xn--90aiydt.xn--80adxhks$ [NC]
+RewriteRule ^(.*)$ https://xn--90aiydt.xn--80adxhks/$1 [R=301,L]
+
+RewriteCond %{HTTPS} off
+
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+
+
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+
+
+
+
+RewriteRule ^robots\.txt$ robots.php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*[^/])$ $1/ [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{HTTP_HOST} .*
+#RewriteRule ^(.*) index.php?name=%1 [L]
+RewriteRule ^(.*) index.php [L]
+
+#Redirect 301 /округ/ювао/ https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B2%D0%B0%D0%BE/
+#Redirect 301 /город/красногорск/ https://%d0%ba%d1%80%d0%b0%d1%81%d0%bd%d0%be%d0%b3%d0%be%d1%80%d1%81%d0%ba.xn--80aae7avmmcaef4i.xn--p1ai/
+#Redirect 301 /город/королев/ https://%D0%BA%D0%BE%D1%80%D0%BE%D0%BB%D0%B5%D0%B2.xn--80aae7avmmcaef4i.xn--p1ai
+
+
+
+
+
+
+#Redirect 301 /город/королев https://%D0%BA%D0%BE%D1%80%D0%BE%D0%BB%D0%B5%D0%B2.xn--80aae7avmmcaef4i.xn--p1ai
+Redirect 301 /город/королев https://xn--b1afoeoan.xn--80aae7avmmcaef4i.xn--p1ai
+Redirect 301 /город/красногорск https://xn--80agtcngblfff.xn--80aae7avmmcaef4i.xn--p1ai
+#Redirect 301 /город/московский https://d0%bc%d0%be%d1%81%d0%ba%d0%be%d0%b2%d1%81%d0%ba%d0%b8%d0%b9.xn--80aae7avmmcaef4i.xn--p1ai
+Redirect 301 /город/мытищи https://xn--h1aaky0bj.xn--80aae7avmmcaef4i.xn--p1ai
+Redirect 301 /город/одинцово https://xn--b1admucdb5d.xn--80aae7avmmcaef4i.xn--p1ai
+Redirect 301 /метро/авиамоторная https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B2%D0%B0%D0%BE/%D0%B0%D0%B2%D0%B8%D0%B0%D0%BC%D0%BE%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F
+Redirect 301 /метро/автозаводская https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B0%D0%BE/%D0%B0%D0%B2%D1%82%D0%BE%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F
+Redirect 301 /метро/алтуфьево https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%81%D0%B2%D0%B0%D0%BE/%D0%B0%D0%BB%D1%82%D1%83%D1%84%D1%8C%D0%B5%D0%B2%D0%BE
+Redirect 301 /метро/бауманская https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%86%D0%B0%D0%BE/%D0%B1%D0%B0%D1%83%D0%BC%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F
+Redirect 301 /метро/бульвар-рокоссовского https://xn--80aae7avmmcaef4i.xn--p1ai/%D0%B2%D0%B0%D0%BE/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80-%D1%80%D0%BE%D0%BA%D0%BE%D1%81%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE
+Redirect 301 /метро/вднх https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%81%D0%B2%D0%B0%D0%BE/%D0%B2%D0%B4%D0%BD%D1%85
+Redirect 301 /метро/владыкино https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%81%D0%B2%D0%B0%D0%BE/%D0%B2%D0%BB%D0%B0%D0%B4%D1%8B%D0%BA%D0%B8%D0%BD%D0%BE
+Redirect 301 /метро/кантемировская /https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B0%D0%BE/%D0%BA%D0%B0%D0%BD%D1%82%D0%B5%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F
+Redirect 301 /метро/коломенская https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B0%D0%BE/%D0%BA%D0%BE%D0%BB%D0%BE%D0%BC%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F
+Redirect 301 /метро/красносельская https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%86%D0%B0%D0%BE/%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F
+Redirect 301 /метро/крылатское https://xn--80aae7avmmcaef4i.xn--p1ai/%D0%B7%D0%B0%D0%BE/%D0%BA%D1%80%D1%8B%D0%BB%D0%B0%D1%82%D1%81%D0%BA%D0%BE%D0%B5
+Redirect 301 /метро/кузьминки https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B2%D0%B0%D0%BE/%D0%BA%D1%83%D0%B7%D1%8C%D0%BC%D0%B8%D0%BD%D0%BA%D0%B8
+Redirect 301 /метро/люблино https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B2%D0%B0%D0%BE/%D0%BB%D1%8E%D0%B1%D0%BB%D0%B8%D0%BD%D0%BE
+Redirect 301 /метро/марьино https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B2%D0%B0%D0%BE/%D0%BC%D0%B0%D1%80%D1%8C%D0%B8%D0%BD%D0%BE
+Redirect 301 /метро/медведково https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%81%D0%B2%D0%B0%D0%BE/%D0%BC%D0%B5%D0%B4%D0%B2%D0%B5%D0%B4%D0%BA%D0%BE%D0%B2%D0%BE
+Redirect 301 /метро/митино https://xn--80aae7avmmcaef4i.xn--p1ai/%d1%81%d0%b7%d0%b0%d0%be/%D0%BC%D0%B8%D1%82%D0%B8%D0%BD%D0%BE
+Redirect 301 /метро/новогиреево https://xn--80aae7avmmcaef4i.xn--p1ai/%D0%B2%D0%B0%D0%BE/%D0%BD%D0%BE%D0%B2%D0%BE%D0%B3%D0%B8%D1%80%D0%B5%D0%B5%D0%B2%D0%BE
+Redirect 301 /метро/новокосино https://xn--80aae7avmmcaef4i.xn--p1ai/%D0%B2%D0%B0%D0%BE/%D0%BD%D0%BE%D0%B2%D0%BE%D0%BA%D0%BE%D1%81%D0%B8%D0%BD%D0%BE
+Redirect 301 /метро/новослободская https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%86%D0%B0%D0%BE/%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D0%BB%D0%BE%D0%B1%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F
+Redirect 301 /метро/октябрьское-поле https://xn--80aae7avmmcaef4i.xn--p1ai/%d1%81%d0%b7%d0%b0%d0%be/%D0%BE%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8C%D1%81%D0%BA%D0%BE%D0%B5-%D0%BF%D0%BE%D0%BB%D0%B5
+Redirect 301 /метро/перово https://xn--80aae7avmmcaef4i.xn--p1ai/%D0%B2%D0%B0%D0%BE/%D0%BF%D0%B5%D1%80%D0%BE%D0%B2%D0%BE
+Redirect 301 /метро/печатники https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B2%D0%B0%D0%BE/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BD%D0%B8%D0%BA%D0%B8
+Redirect 301 /метро/полежаевская https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%81%D0%B0%D0%BE/%D0%BF%D0%BE%D0%BB%D0%B5%D0%B6%D0%B0%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F
+Redirect 301 /метро/пражская https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B0%D0%BE/%D0%BF%D1%80%D0%B0%D0%B6%D1%81%D0%BA%D0%B0%D1%8F
+Redirect 301 /метро/речной-вокзал https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%81%D0%B0%D0%BE/%D1%80%D0%B5%D1%87%D0%BD%D0%BE%D0%B9-%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB
+Redirect 301 /метро/сокол https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%81%D0%B0%D0%BE/%D1%81%D0%BE%D0%BA%D0%BE%D0%BB
+Redirect 301 /метро/строгино https://xn--80aae7avmmcaef4i.xn--p1ai/%d1%81%d0%b7%d0%b0%d0%be/%D1%81%D1%82%D1%80%D0%BE%D0%B3%D0%B8%D0%BD%D0%BE
+Redirect 301 /метро/сходненская https://xn--80aae7avmmcaef4i.xn--p1ai/%d1%81%d0%b7%d0%b0%d0%be/%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F
+Redirect 301 /метро/таганская https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%86%D0%B0%D0%BE/%D1%82%D0%B0%D0%B3%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F
+Redirect 301 /метро/текстильщики https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B2%D0%B0%D0%BE/%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B8%D0%BB%D1%8C%D1%89%D0%B8%D0%BA%D0%B8
+Redirect 301 /метро/теплый-стан https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B7%D0%B0%D0%BE/%D1%82%D0%B5%D0%BF%D0%BB%D1%8B%D0%B9-%D1%81%D1%82%D0%B0%D0%BD
+Redirect 301 /метро/электрозаводская https://xn--80aae7avmmcaef4i.xn--p1ai/%D0%B2%D0%B0%D0%BE/%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F
+Redirect 301 /метро/ясенево https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B7%D0%B0%D0%BE/%D1%8F%D1%81%D0%B5%D0%BD%D0%B5%D0%B2%D0%BE
+Redirect 301 /округ/ювао https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B2%D0%B0%D0%BE
+Redirect 301 /район/бескудниково https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%81%D0%B0%D0%BE/%D0%B1%D0%B5%D1%81%D0%BA%D1%83%D0%B4%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%BE
+Redirect 301 /район/бирюлево https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B0%D0%BE/%D0%B1%D0%B8%D1%80%D1%8E%D0%BB%D0%B5%D0%B2%D0%BE
+Redirect 301 /район/братеево https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B0%D0%BE/%D0%B1%D1%80%D0%B0%D1%82%D0%B5%D0%B5%D0%B2%D0%BE
+Redirect 301 /район/вешняки https://xn--80aae7avmmcaef4i.xn--p1ai/%D0%B2%D0%B0%D0%BE/%D0%B2%D0%B5%D1%88%D0%BD%D1%8F%D0%BA%D0%B8
+Redirect 301 /район/гольяново https://xn--80aae7avmmcaef4i.xn--p1ai/%D0%B2%D0%B0%D0%BE/%D0%B3%D0%BE%D0%BB%D1%8C%D1%8F%D0%BD%D0%BE%D0%B2%D0%BE
+Redirect 301 /район/измайлово https://xn--80aae7avmmcaef4i.xn--p1ai/%D0%B2%D0%B0%D0%BE/%D0%B8%D0%B7%D0%BC%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%BE
+Redirect 301 /район/капотня https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B2%D0%B0%D0%BE/%D0%BA%D0%B0%D0%BF%D0%BE%D1%82%D0%BD%D1%8F
+#Redirect 301 /район/кожухово https://xn--80aae7avmmcaef4i.xn--p1ai/ /%D0%BA%D0%BE%D0%B6%D1%83%D1%85%D0%BE%D0%B2%D0%BE
+#Redirect 301 /район/коммунарка https://xn--80aae7avmmcaef4i.xn--p1ai/ /%D0%BA%D0%BE%D0%BC%D0%BC%D1%83%D0%BD%D0%B0%D1%80%D0%BA%D0%B0
+#Redirect 301 /район/косино https://xn--80aae7avmmcaef4i.xn--p1ai/ /%D0%BA%D0%BE%D1%81%D0%B8%D0%BD%D0%BE
+Redirect 301 /район/кунцево https://xn--80aae7avmmcaef4i.xn--p1ai/%D0%B7%D0%B0%D0%BE/%D0%BA%D1%83%D0%BD%D1%86%D0%B5%D0%B2%D0%BE
+Redirect 301 /район/куркино https://xn--80aae7avmmcaef4i.xn--p1ai/%d1%81%d0%b7%d0%b0%d0%be/%D0%BA%D1%83%D1%80%D0%BA%D0%B8%D0%BD%D0%BE
+Redirect 301 /район/орехово-борисово https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B0%D0%BE/%D0%BE%D1%80%D0%B5%D1%85%D0%BE%D0%B2%D0%BE-%D0%B1%D0%BE%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%BE
+Redirect 301 /район/очаково https://xn--80aae7avmmcaef4i.xn--p1ai/%D0%B7%D0%B0%D0%BE/%D0%BE%D1%87%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE-%D0%BC%D0%B0%D1%82%D0%B2%D0%B5%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B5
+Redirect 301 /район/переделкино https://xn--80aae7avmmcaef4i.xn--p1ai/%D0%B7%D0%B0%D0%BE/%D0%BD%D0%BE%D0%B2%D0%BE%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%BA%D0%B8%D0%BD%D0%BE
+Redirect 301 /район/северное-бутово https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B7%D0%B0%D0%BE/%D1%81%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D0%BE%D0%B5-%D0%B1%D1%83%D1%82%D0%BE%D0%B2%D0%BE
+Redirect 301 /район/солнцево https://xn--80aae7avmmcaef4i.xn--p1ai/%D0%B7%D0%B0%D0%BE/%D1%81%D0%BE%D0%BB%D0%BD%D1%86%D0%B5%D0%B2%D0%BE
+Redirect 301 /район/южное-бутово https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B7%D0%B0%D0%BE/%D1%8E%D0%B6%D0%BD%D0%BE%D0%B5-%D0%B1%D1%83%D1%82%D0%BE%D0%B2%D0%BE
+Redirect 301 /улица/волгоградский-проспект https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B2%D0%B0%D0%BE/%D0%B2%D0%BE%D0%BB%D0%B3%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82
+Redirect 301 /улица/ленинский-проспект https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B7%D0%B0%D0%BE/%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82
+#Redirect 301 /улица/мичуринский-проспект https://xn--80aae7avmmcaef4i.xn--p1ai/ /%D0%BC%D0%B8%D1%87%D1%83%D1%80%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82
+Redirect 301 /улица/нахимовский-проспект https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B7%D0%B0%D0%BE/%D0%BD%D0%B0%D1%85%D0%B8%D0%BC%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82
+Redirect 301 /улица/проспект-вернадского https://xn--80aae7avmmcaef4i.xn--p1ai/%D0%B7%D0%B0%D0%BE/%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82-%D0%B2%D0%B5%D1%80%D0%BD%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B3%D0%BE
+Redirect 301 /улица/проспект-мира https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%86%D0%B0%D0%BE/%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82-%D0%BC%D0%B8%D1%80%D0%B0
+Redirect 301 /улица/рязанский-проспект https://xn--80aae7avmmcaef4i.xn--p1ai/%D1%8E%D0%B2%D0%B0%D0%BE/%D1%80%D1%8F%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82
+Redirect 301 /улица/шоссе-энтузиастов https://xn--80aae7avmmcaef4i.xn--p1ai/%D0%B2%D0%B0%D0%BE/%D1%88%D0%BE%D1%81%D1%81%D0%B5-%D1%8D%D0%BD%D1%82%D1%83%D0%B7%D0%B8%D0%B0%D1%81%D1%82%D0%BE%D0%B2
+
+
+<ifModule mod_expires.c>
+
+ ExpiresActive On
+ #кэшировать флэш и изображения на месяц
+ ExpiresByType image/x-icon "access plus 7 days"
+ ExpiresByType image/jpeg "access plus 7 days"
+ ExpiresByType image/png "access plus 7 days"
+ ExpiresByType image/gif "access plus 7 days"
+ ExpiresByType application/x-shockwave-flash "access plus 7 days"
+ #кэшировать css, javascript и текстовые файлы на одну неделю
+ ExpiresByType text/css "access plus 7 days"
+ ExpiresByType text/javascript "access plus 7 days"
+ ExpiresByType application/javascript "access plus 7 days"
+ ExpiresByType application/x-javascript "access plus 7 days"
+ #кэшировать html и htm файлы на один день
+ ExpiresByType text/html "access plus 1 day"
+ #кэшировать xml файлы на десять минут
+ ExpiresByType application/xhtml+xml "access plus 10 minutes"
+</ifModule>
+
+
+<IfModule mod_deflate.c>
+# Compress HTML, CSS, JavaScript, Text, XML and fonts
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+AddOutputFilterByType DEFLATE application/x-font
+AddOutputFilterByType DEFLATE application/x-font-opentype
+AddOutputFilterByType DEFLATE application/x-font-otf
+AddOutputFilterByType DEFLATE application/x-font-truetype
+AddOutputFilterByType DEFLATE application/x-font-ttf
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE font/opentype
+AddOutputFilterByType DEFLATE font/otf
+AddOutputFilterByType DEFLATE font/ttf
+AddOutputFilterByType DEFLATE image/svg+xml
+AddOutputFilterByType DEFLATE image/x-icon
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/xml
+
+# Remove browser bugs (only needed for really old browsers)
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+Header append Vary User-Agent
+</IfModule>
+
+
+
+

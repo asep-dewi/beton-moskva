@@ -1,0 +1,3 @@
+#Главный
+User-Agent: *
+Disallow: /
